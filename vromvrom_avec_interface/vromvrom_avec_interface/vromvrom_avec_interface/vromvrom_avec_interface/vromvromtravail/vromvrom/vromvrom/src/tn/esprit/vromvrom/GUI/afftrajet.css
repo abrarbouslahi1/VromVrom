@@ -1,0 +1,22 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+.table-view{
+	-fx-background-color: transparent ;
+}
+.table-view:focused{
+	-fx-background-color: transparent ;
+}
+.table-view .column-header-background{
+	-fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+}
+.table-view .column-header-background .label{
+	-fx-background-color: transparent ;
+	-fx-text-fill: white;
+}
+.table-view .column-header{
+	-fx-background-color: transparent ;
+}
+}

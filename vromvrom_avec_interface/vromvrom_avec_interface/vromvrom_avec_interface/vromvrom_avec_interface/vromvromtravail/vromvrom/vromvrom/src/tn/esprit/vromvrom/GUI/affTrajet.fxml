@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="831.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.vromvrom.GUI.AffTrajetController">
+    <stylesheets>
+        <URL value="@afftrajet.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tab" layoutX="80.0" layoutY="118.0" prefHeight="366.0" prefWidth="735.0" style="-fx-background-color: 113300;">
+         <columns>
+            <TableColumn fx:id="VD" prefWidth="113.0" text="Ville_depart" />
+            <TableColumn fx:id="VA" prefWidth="112.0" text="ville_darrive" />
+            <TableColumn fx:id="prix" prefWidth="91.0" text="prix" />
+            <TableColumn fx:id="place" prefWidth="120.0" text="Nb_Place" />
+            <TableColumn fx:id="pose" prefWidth="99.0" text="Duree_Pose" />
+            <TableColumn fx:id="paiement" prefWidth="137.0" text="Mode_paiement" />
+         </columns>
+      </TableView>
+      <Button fx:id="retour" layoutX="107.0" layoutY="534.0" mnemonicParsing="false" onAction="#Retour" text="Return" />
+      <Button fx:id="supp" layoutX="227.0" layoutY="534.0" mnemonicParsing="false" onAction="#Supprimer" text="supp" />
+      <Button fx:id="mod" layoutX="319.0" layoutY="534.0" mnemonicParsing="false" onAction="#Modifier" text="modifier" />
+      <TextField fx:id="id" layoutX="107.0" layoutY="52.0" promptText="id" />
+      <Button fx:id="ref" layoutX="540.0" layoutY="534.0" mnemonicParsing="false" onAction="#Refresh" text="Refresh" />
+      <TextField fx:id="idM" layoutX="395.0" layoutY="59.0" />
+   </children>
+</AnchorPane>
